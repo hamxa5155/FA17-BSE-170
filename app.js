@@ -42,7 +42,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 mongoose
-  .connect("", {
+  .connect("mongodb+srv://mernstack:11223344@cluster0.7m4e8.mongodb.net/HAMZA?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
